@@ -7,9 +7,25 @@ This project analyzes factors influencing graduate admissions to Ivy League coll
 
 Jamboree aims to help students gain admission to top universities abroad. They recently launched a feature on their website to estimate the probability of Indian students getting into Ivy League graduate programs. This project supports that initiative by:
 
-*   **Exploratory Data Analysis (EDA):** Investigating the distribution of applicant characteristics and their correlations.
-*   **Linear Regression Modeling:** Building a model to predict the chance of admission based on applicant profiles.
-*   **Model Evaluation and Diagnostics:** Assessing the model's performance and checking for violations of linear regression assumptions.
+**Data Loading and Preprocessing:** Importing the dataset and handling any missing values or irrelevant columns (like the serial number).
+2.  **Exploratory Data Analysis (EDA):**
+    *   Descriptive statistics (mean, median, standard deviation, etc.).
+    *   Data visualizations (histograms, scatter plots, correlation matrices).
+    *   Analysis of variable distributions and relationships.
+3.  **Linear Regression Modeling :**
+    *   Building a linear regression model using `statsmodels.api.OLS`.
+    *   Interpreting the model summary, including coefficients, p-values, R-squared, and other statistics.
+4.  **Regularized Regression (Scikit-learn):**
+    *   Implementing Ridge and Lasso regression using `sklearn.linear_model.Ridge` and `sklearn.linear_model.Lasso`.
+    *   Comparing the performance of regularized models with the basic linear regression model.
+    *   (Optional) Tuning hyperparameters (alpha) for Ridge and Lasso using cross-validation (`sklearn.model_selection.GridSearchCV` or `RandomizedSearchCV`).
+5.  **Model Diagnostics (Statsmodels):**
+    *   Checking for multicollinearity using Variance Inflation Factor (VIF) (can be calculated using `statsmodels` or `statsmodels.stats.outliers_influence.variance_inflation_factor` or a custom function).
+    *   Analyzing residuals for linearity, homoscedasticity, and normality using diagnostic plots and tests provided by `statsmodels`.
+6.  **Model Evaluation:**
+    *   Calculating metrics like Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R-squared (R²), and Adjusted R² for all models (Linear, Ridge, Lasso) using `sklearn.metrics` or manual calculations.
+7.  **Insights and Recommendations:** Drawing conclusions based on the analysis and providing actionable recommendations to Jamboree.
+
 
 ## Dataset
 
@@ -53,7 +69,7 @@ The project follows these steps:
 *   statsmodels
 *   scikit-learn (potentially for VIF calculation and Model Building)
 
-## Results and Insights (Summarize Key Findings Here)
+## Results and Insights 
 
 *   **Strong Predictors:** CGPA (Undergraduate GPA), GRE scores, and TOEFL scores are significant predictors of admission chances. Higher scores in these areas are strongly correlated with a higher probability of admission.
 *   **Positive Impact of Research:** Research experience has a positive impact on admission chances. Applicants with research experience tend to have a higher likelihood of being admitted.
@@ -68,10 +84,17 @@ The project follows these steps:
 *   **Further Investigation:** While the model performs well, further investigation could explore other potential factors that influence admissions (e.g., quality of the statement of purpose, specific university requirements).
 
 
-## Further Improvements (Optional)
+## Further Improvements 
 
 *   Collect more data to improve the model's accuracy and generalizability.
 *   Deploy the model as a web application for Jamboree's website.
+
+## Colab Notebook
+- You can access the full Python analysis on Google Colab using the following link: [View the notebook](https://colab.research.google.com/drive/1K87JOiTTbnVGQcna-IO3bSItAgQj1jn1#scrollTo=BNbt-qGtjvxh)
+
+## PDF Report
+
+A detailed analysis report is available in the following PDF file: [View Report](Risk_anlytics.pdf).
 
 ## Contact
 

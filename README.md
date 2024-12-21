@@ -1,5 +1,6 @@
 # Jamboree-Education-Linear-Regression
-# Graduate Admissions Prediction for Ivy League Colleges (Indian Perspective)
+![image](https://github.com/user-attachments/assets/6f4ad165-4523-4246-b84e-6b5be9509b7b)
+
 
 This project analyzes factors influencing graduate admissions to Ivy League colleges from an Indian perspective, using data provided by Jamboree, an overseas education consultancy. The goal is to understand the relationships between various applicant attributes and their chances of admission, and to build a predictive model.
 

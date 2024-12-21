@@ -95,7 +95,7 @@ The project follows these steps:
 
 ## PDF Report
 
-A detailed analysis report is available in the following PDF file: [View Report](Risk_anlytics.pdf).
+A detailed analysis report is available in the following PDF file: [View Report](Jamboree -Linear Regression.pdf).
 
 ## Contact
 

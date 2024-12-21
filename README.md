@@ -7,7 +7,7 @@ This project analyzes factors influencing graduate admissions to Ivy League coll
 
 Jamboree aims to help students gain admission to top universities abroad. They recently launched a feature on their website to estimate the probability of Indian students getting into Ivy League graduate programs. This project supports that initiative by:
 
-**Data Loading and Preprocessing:** Importing the dataset and handling any missing values or irrelevant columns (like the serial number).
+1.   **Data Loading and Preprocessing:** Importing the dataset and handling any missing values or irrelevant columns (like the serial number).
 2.  **Exploratory Data Analysis (EDA):**
     *   Descriptive statistics (mean, median, standard deviation, etc.).
     *   Data visualizations (histograms, scatter plots, correlation matrices).
